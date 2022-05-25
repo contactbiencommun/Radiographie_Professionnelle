@@ -3,4 +3,8 @@ pandas
 yagmail
 fpdf2
 plotly
+<<<<<<< HEAD
 kaleido
+=======
+kaleido
+>>>>>>> d0859b658cb5142f306ef92fdb182650bae3d14e

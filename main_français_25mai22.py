@@ -18,6 +18,8 @@ def main(version):
     image = "ImageBC.png"
     titre = dict_element_formulaire('titre', version)
     st.image(image)
+
+
     st.title(titre)
 
     fw.insert_video(dict_element_formulaire('video_de_présentation', version))
@@ -43,8 +45,6 @@ def main(version):
                             titre=dict_element_formulaire('titre', version),
                             sous_titre=dict_element_formulaire('sous_titre', version)
                             )
-
-    #formulaire.cree_test()
 
     is_ok=False
     v = formulaire.cree_formulaire()
@@ -482,7 +482,14 @@ def main(version):
 
 if __name__ == "__main__":
 
-    vers=1
+    vers = st.sidebar.radio(
+        "Version/Versiune",
+        ('française','română'))
+
+    if vers=='française':
+        vers=1
+    elif vers=='română':
+        vers=2
 
     if vers==1:
         version = "française"
