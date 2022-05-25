@@ -8,16 +8,9 @@ from PIL import Image
 
 def main(version):
 
-    img1=Image.open("ImageMin.png")
 
-    st.set_page_config(page_title="Bien Commun",
-                       page_icon=img1,
-                       layout="wide"
-                        )
-
-    image = "ImageBC.png"
     titre = dict_element_formulaire('titre', version)
-    st.image(image)
+
 
 
     st.title(titre)
@@ -48,11 +41,6 @@ def main(version):
 
     is_ok=False
     v = formulaire.cree_formulaire()
-    #st.write(v[0]) # nom
-    #st.write(v[1])#numtel
-    #st.write(v[2])#Email
-    #st.write(v[3])#sexe_sujet
-
     if v[0]!=" " and v[1]!=" "and v[2] !=" "and v[3] !=" ":
         is_ok=True
 
@@ -482,9 +470,21 @@ def main(version):
 
 if __name__ == "__main__":
 
-    vers = st.sidebar.radio(
+
+    img1=Image.open("ImageMin.png")
+
+    st.set_page_config(page_title="Bien Commun",
+                       page_icon=img1,
+                       layout="wide"
+                        )
+
+    image = "ImageBC.png"
+    st.image(image)
+    vers = st.radio(
         "Version/Versiune",
         ('française','română'))
+
+
 
     if vers=='française':
         vers=1

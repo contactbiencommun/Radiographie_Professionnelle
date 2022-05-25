@@ -897,7 +897,7 @@ def dict_element_formulaire(elem,version):
                   'Email': 'Adresse Email',
                   'user1': "contactbiencommun@gmail.com",
                   'mypassword': "2022Succes.",
-                  'mailto': "j.ralaizanaka@gmail.com",
+                  'mailto': "contactbiencommun@gmail.com",
                   'sujet': "Nouveau Prospect",
                   'messageRes': "Passons aux tests",
                   'nom_bouton_soumettre': 'Envoyer',
