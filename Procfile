@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run --server.enableCORS false ApliWeb18mars.py
+web: sh setup.sh && streamlit run --server.enableCORS false main_français_25mai22.py
