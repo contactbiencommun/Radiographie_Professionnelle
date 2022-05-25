@@ -48,15 +48,15 @@ def main(version):
 
     is_ok=False
     v = formulaire.cree_formulaire()
-    st.write(v[0]) # nom
-    st.write(v[1])#numtel
-    st.write(v[2])#Email
-    st.write(v[3])#sexe_sujet
+    #st.write(v[0]) # nom
+    #st.write(v[1])#numtel
+    #st.write(v[2])#Email
+    #st.write(v[3])#sexe_sujet
 
     if v[0]!=" " and v[1]!=" "and v[2] !=" "and v[3] !=" ":
         is_ok=True
 
-    st.write(is_ok)
+    #st.write(is_ok)
 
     init_intitule = dict_element_formulaire('init_intitule', version)
     init_msgChoixNote = dict_element_formulaire('init_msgChoixNote', version)
